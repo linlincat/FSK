@@ -3,10 +3,10 @@
     <div>
       <logo/>
       <h1 class="title">
-        fsk
+        hello world
       </h1>
       <h2 class="subtitle">
-        team to create the nuxt_frame
+        team to create the obj
       </h2>
       <div class="links">
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>

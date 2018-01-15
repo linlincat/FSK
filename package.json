@@ -4,6 +4,12 @@
   "description": "team to create the nuxt_frame",
   "author": "shilinlin <283125476@qq.com>",
   "private": true,
+  "config": {
+    "nuxt": {
+      "host": "127.0.0.1",
+      "port": "8880"
+    }
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -24,6 +30,9 @@
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1"
+    "eslint-plugin-standard": "^3.0.1",
+    "sass-loader": "^6.0.6",
+    "scss-loader": "^0.0.1",
+    "vue-meta": "^1.4.2"
   }
 }

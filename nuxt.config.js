@@ -22,17 +22,32 @@ module.exports = {
   */
   build: {
     /*
+    ** Run Scss on save
+    */
+    loaders: [
+      {
+        test: /\.(scss|sass)$/,
+        use: [{
+          loader: 'vue-style-loader!css-loader!sass-loader'
+        }]
+      }
+    ],
+    /*
     ** Run ESLint on save
     */
     extend (config, { isDev, isClient }) {
-      if (isDev && isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
-      }
+      // const vueLoader = config.module.rules.find((rule) => {
+      //   return rule.loader === 'vue-loader'
+      // })
+      // vueLoader.options.loaders.scss = 'vue-style-loader!css-loader!sass-loader'
+      // if (isDev && isClient) {
+      //   config.module.rules.push({
+      //     enforce: 'pre',
+      //     test: /\.(js|vue)$/,
+      //     loader: 'eslint-loader',
+      //     exclude: /(node_modules)/
+      //   })
+      // }
     }
   }
 }
