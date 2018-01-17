@@ -24,6 +24,10 @@ module.exports = {
     /*
     ** Scss 编译成style
     */
+    vendor: ['axios']
+    /*
+    ** Scss 编译成style
+    */
     loaders: [
       {
         test: /\.(scss|sass)$/,
