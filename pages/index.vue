@@ -19,14 +19,17 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
+import axios from 'axios'
 
 export default {
   components: {
     Logo
   },
   methods: {
-    toShow() {
+    async toShow() {
       alert("clike me now HELLO WORLD!")
+      var str = await axios.get(`../server/abc.json`)
+      console.log(str)
     }
   },
   // layout: 'bodyFrame'
