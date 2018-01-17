@@ -5,6 +5,7 @@
       <h1 class="title">
         hello world
       </h1>
+      <p @click="toShow">click me</p>
       <h2 class="subtitle">
         team to create the obj
       </h2>
@@ -22,7 +23,13 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
-  }
+  },
+  methods: {
+    toShow() {
+      alert("clike me now HELLO WORLD!")
+    }
+  },
+  // layout: 'bodyFrame'
 }
 </script>
 

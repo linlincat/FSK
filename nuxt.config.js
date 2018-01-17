@@ -22,7 +22,7 @@ module.exports = {
   */
   build: {
     /*
-    ** Run Scss on save
+    ** Scss 编译成style
     */
     loaders: [
       {

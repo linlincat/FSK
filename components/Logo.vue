@@ -26,13 +26,14 @@
 .VueToNuxtLogo {
   width: 200px;
   height: 300px;
-  background: red;
+  background: rgba(234, 0, 255, 0.287);
 
   p {
     color: #fff;
   }
 
   em {
+    font-size: 30px;
     color: gray;
   }
 }
